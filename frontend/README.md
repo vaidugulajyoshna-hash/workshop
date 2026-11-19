@@ -24,7 +24,7 @@ npm install
 npm run dev
 ```
 
-Vite proxies `/api` to `http://127.0.0.1:5000` by default. To use another local API, set `VITE_BACKEND_URL` in a `frontend/.env` file. For a separately hosted frontend, set `VITE_API_BASE_URL` to the deployed Flask service origin before building. See `env.example` for the variable names.
+Vite proxies `/api` to `http://127.0.0.1:5000` by default. To use another local API, set `VITE_BACKEND_URL` in `frontend/.env`. For a separately hosted frontend, set `VITE_API_BASE_URL` to the deployed Flask service origin before building. See `env.example` for the variable names.
 
 The registration endpoints require the UUID of an existing row in the Supabase `users` table. Enter that UUID in the account field; it is saved only in this browser's local storage. Authentication is not provided by the current backend.
 
